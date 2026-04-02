@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../headers/WorkExampleZero.h"
+#include "WorkExampleZero.h"
 
 int main() {
-    WorkExampleZero::excerciseOne();
+    WorkExampleZero::excerciseTwo();
     return 0;
 }
