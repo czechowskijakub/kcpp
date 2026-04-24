@@ -1,4 +1,4 @@
-#include "WorkExampleZero.h"
+#include "ExcerciseOne.h"
 #include <iostream>
 #include <string>
 
@@ -24,7 +24,7 @@ namespace utils {
     }
   }
 
-void WorkExampleZero::excerciseTwo() {
+void ExcerciseOne::excerciseTwo() {
   std::string name = "";
   std::string surname = "";
   
@@ -156,3 +156,8 @@ void WorkExampleZero::excerciseTwo() {
 
 }
 
+int main() {
+    ExcerciseOne::excerciseTwo();
+
+    return 0;
+}

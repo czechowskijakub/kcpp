@@ -1,9 +1,14 @@
 cmake_minimum_required(VERSION 3.10)
 project(kcpp)
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_EXTENSIONS OFF) 
-include_directories(headers)
 
-file(GLOB SOURCES "src/*.cc")
-add_executable(program ${SOURCES})
+include_directories(${PROJECT_SOURCE_DIR}/headers)
+
+file(GLOB APP_SOURCES "${PROJECT_SOURCE_DIR}/src/*.cc")
+
+foreach(SRC_FILE ${APP_SOURCES})
+    get_filename_component(EXE_NAME ${SRC_FILE} NAME_WE)
+    add_executable(${EXE_NAME} ${SRC_FILE})
+endforeach()
