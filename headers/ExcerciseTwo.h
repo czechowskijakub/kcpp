@@ -23,4 +23,8 @@ public:
     // ex.4
     // already exists in src/ZadPrzeciazaniePlus.cc
 
+    // ex. 5
+    // already exists in src/LPrzeciazaniePotega.cc
+
+
 };

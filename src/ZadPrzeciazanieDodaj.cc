@@ -9,6 +9,10 @@ double dodaj(const double& a, const double& b) {
     return a + b;
 }
 
+float dodaj(const float& a, const float& b) {
+    return a + b;
+}
+
 std::string dodaj(const std::string& a, const std::string& b) {
     return a + b;
 }
@@ -16,6 +20,7 @@ std::string dodaj(const std::string& a, const std::string& b) {
 int main() {
     std::cout << dodaj(1, 2) << "\n";
     std::cout << dodaj(1.0, 2.0) << "\n";
+    std::cout << dodaj(1.5f, 2.f) << "\n";
     std::cout << dodaj("1", "2") << "\n";
 
     return 0;
