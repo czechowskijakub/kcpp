@@ -12,7 +12,8 @@ private:
     std::string barks[3] = {"Woooof", "Wooof", "aaaWooooof"};
 
 public:
-    Dog() {
+    Dog(const std::string& name, const int& age) : _name(name), _age(age) {
+        srand(time(NULL));
         std::cout << "Dog's been born." << "\n";
     }
 
@@ -37,10 +38,19 @@ public:
     }
 
     void bark() {
-        srand(time(NULL));
         int random = rand() % 3;
 
-        std::cout << barks[random];
+        std::cout << barks[random] << "\n";
     }
 
 };
+
+int main() {
+    Dog d{"Tonia", 11};
+
+    d.bark();
+    d.bark();
+
+
+    return 0;
+}
