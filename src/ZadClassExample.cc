@@ -47,10 +47,9 @@ public:
 
 int main() {
     Dog d{"Tonia", 11};
-
     d.bark();
     d.bark();
-
+    d.bark();
 
     return 0;
 }

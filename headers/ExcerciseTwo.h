@@ -15,7 +15,12 @@ public:
     void displayExcerciseOne();
 
     // ex. 2
+    // already exists in src/ZadPrzeciazaniePole.cc
 
-    
+    // ex.3
+    // already exists in src/ZadPrzeciazanieDodaj.cc
+
+    // ex.4
+    // already exists in src/ZadPrzeciazaniePlus.cc
 
 };
